@@ -10,6 +10,7 @@ function App() {
         <div className="col">
           <PostForm />
         </div>
+        <hr style={{ marginTop: '15px' }} />
       </div>
       <div className="row">
         <div className="col">
@@ -18,7 +19,7 @@ function App() {
         </div>
         <div className="col">
           <h2>Async Posts List:</h2>
-          <FetchedPosts posts={[1, 2, 3, 4, 5, 6]} />
+          <FetchedPosts posts={[1, 2, 3, 4, 5]} />
         </div>
       </div>
     </div>

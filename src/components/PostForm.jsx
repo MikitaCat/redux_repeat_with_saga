@@ -9,9 +9,15 @@ export class PostForm extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>PostForm</h1>
-      </div>
+      <form>
+        <div className="form-group">
+          <label htmlFor="title">Post Title</label>
+          <input type="text" className="form-control" id="title" />
+        </div>
+        <button className="btn btn-success" type="submit" style={{ marginTop: '10px' }}>
+          Create
+        </button>
+      </form>
     );
   }
 }
