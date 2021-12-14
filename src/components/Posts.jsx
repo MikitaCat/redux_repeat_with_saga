@@ -1,11 +1,10 @@
 import React from 'react';
+import Post from './Post';
 
-function Posts() {
-  return (
-    <div>
-      <h1>Posts</h1>
-    </div>
-  );
+function Posts({ posts }) {
+  return posts.map((post) => {
+    return <Post post={post} id={post} />;
+  });
 }
 
 export default Posts;
