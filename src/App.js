@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import FetchedPosts from './components/FetchedPosts';
-import { PostForm } from './components/PostForm';
+import PostForm from './components/PostForm';
 import Posts from './components/Posts';
 
 function App() {
