@@ -1,11 +1,14 @@
 import React from 'react';
+import Post from './Post';
 
-function FetchedPosts() {
-  return (
-    <div>
-      <h1>Fetched Posts</h1>
-    </div>
-  );
+function FetchedPosts({ posts }) {
+  if (!posts.length) {
+    return <button className="btn btn-primary">Download posts</button>;
+  }
+
+  return posts.map((post) => {
+    return <Post post={post} />;
+  });
 }
 
 export default FetchedPosts;
