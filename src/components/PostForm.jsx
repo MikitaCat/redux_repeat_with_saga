@@ -15,6 +15,7 @@ export class PostForm extends React.Component {
       id: Date.now().toString(),
       title: this.state.title,
     };
+    this.props.addPost(newPost);
     console.log(newPost);
     this.setState({ title: '' });
   };

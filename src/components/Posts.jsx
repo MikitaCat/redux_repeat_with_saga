@@ -7,7 +7,7 @@ function Posts({ posts }) {
   }
 
   return posts.map((post) => {
-    return <Post post={post} key={post} />;
+    return <Post postTitle={post.title} key={post.id} />;
   });
 }
 
