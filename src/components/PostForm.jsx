@@ -11,7 +11,11 @@ export class PostForm extends React.Component {
 
   submitHandler = (event) => {
     event.preventDefault();
-    console.log(this.state.title);
+    const newPost = {
+      id: Date.now().toString(),
+      title: this.state.title,
+    };
+    console.log(newPost);
     this.setState({ title: '' });
   };
 
